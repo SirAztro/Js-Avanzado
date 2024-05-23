@@ -10,7 +10,7 @@
 
     <header>
         <nav class="nav">
-            <img src="" alt="./img">
+            <img src="" alt="../img/Pokedex_logo.png">
             <ul>
                 <li class="nav-item"><button class="btn btn-header" id="ver-todos">Ver todos</button></li>
                 <li class="nav-item"><button class="btn btn-header normal" id="normal">Normal</button></li>
@@ -35,6 +35,36 @@
 
         </nav>
     </header>
-<script src="../js/data.js"></script>
+    <main>
+        <!--Permitir que, al hacer click sobre la tarjeta de un pokemon, se despliegue más información, como el peso, sus movimientos (ataques), etc. De preferencia empleando un modal.-->
+        <div id="todos">
+            <div class="pokemon-todos" id="listaPokemon">
+                <div class="pokemon" id="001"></div>
+                    <p class="pokemon-id-back">#001</p>
+                    <div class="pokemon-imagen">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt="Bulbasaur">
+                    </div>
+                    <div class="pokemon-info">
+                        <div class="name-container">
+                            <p class="pokemon-id">#001</p>
+                            <h2 class="pokemon-name">Bulbasaur</h2>
+                        </div>
+                        <div class="pokemon-tipos">
+                            <p class="pokemon-type">Grass</p>
+                            <p class="pokemon-type">Poison</p>
+                        </div>
+                        <div class="pokemon-stats">
+                            <p class="stat">28</p>
+                            <p class="stat">15.2</p>
+                        </div>
+                        <div class="pokemo-abilities"> 
+                            <p class="ability">Overgrow</p>
+                            <p class="ability">Chlorophyll</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/data.js"></script>
 </body>
 </html>
